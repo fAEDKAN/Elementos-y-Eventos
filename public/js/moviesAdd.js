@@ -1,27 +1,24 @@
 window.onload = function(){
-    let title = document.querySelector('.moviesAddTitulo')
-    let form = document.querySelector('#formulario');
+    let titulo = document.querySelector('.moviesAddTitulo')
+    let formulario = document.querySelector('#formulario');
     let article = document.querySelector('article');
-    title.innerHTML = 'AGREGAR PELÍCULA';
-    title.classList.add('title');
+    titulo.innerHTML = 'AGREGAR PELÍCULA';
+    titulo.classList.add('titulo');
     article.classList.add('fondoTransparente');
-    form.classList.add('fondoCRUD');
+    formulario.classList.add('fondoCRUD');
 
-    /* En moviesAdd.ejs, establecer que, cada vez que se pase el mouse por el título
-'AGREGAR PELÍCULA', este cambie su color.
- */
-    title.addEventListener("mouseover", () => {
-        title.classList.toggle("botonBorrar")
+    titulo.addEventListener("mouseover", () => {
+        titulo.classList.toggle("botonBorrar")
     })
-    title.addEventListener("mouseout", () => {
-        title.classList.toggle("botonBorrar")
+    titulo.addEventListener("mouseout", () => {
+        titulo.classList.toggle("botonBorrar")
     })
 
-    let inputTitle = document.getElementById("title");
+    let inputTitulo = document.getElementById("titulo");
     let estadoSecreto = 0;
     
 
-    inputTitle.addEventListener("keypress", (e) => {
+    inputTitulo.addEventListener("keypress", (e) => {
 
             switch (estadoSecreto) {
                 case 0:

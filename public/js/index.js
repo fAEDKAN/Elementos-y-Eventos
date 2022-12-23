@@ -1,5 +1,5 @@
 window.onload = function () {
-    //JavaScript del Index
+
     let container = document.querySelector('.container');
     let subtitulo = document.querySelector('.subtitulo');
     let destacado = document.querySelectorAll('p');
@@ -9,13 +9,13 @@ window.onload = function () {
     let nombre = prompt('Ingrese su nombre');
     console.log(nombre);
     if (nombre != '') {
-        subtitulo.innerHTML += nombre;
+        subtitulo.innerHTML += ` ${nombre}`;
     } else {
-        subtitulo.innerHTML += 'invitado';
+        subtitulo.innerHTML += ' INVITADO';
     }
 
     subtitulo.style.textTransform = 'uppercase';
-    let confirmar = confirm('Desea colocar un fondo de pantalla?')
+    let confirmar = confirm('Desea colocar un fondo de pantalla ')
     if (confirmar) {
         fondo.classList.add('fondo');
         enlace.style.color = '#E51B3E';

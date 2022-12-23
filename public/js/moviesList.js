@@ -1,6 +1,6 @@
 window.onload = function(){
     let body = document.querySelector('body');
-    let moviesListTitle = document.querySelector('.moviesListTitle');
+    let moviesListTitulo = document.querySelector('.moviesListTitulo');
 
     let logoDh = document.querySelector(".logoDH")
 
@@ -10,10 +10,10 @@ window.onload = function(){
     })
     
     console.log(body);
-    moviesListTitle.innerHTML = 'LISTADO DE PELÍCULAS';
-    moviesListTitle.style.color ='white';
-    moviesListTitle.style.backgroundColor = 'teal';
-    moviesListTitle.style.padding = '20px';
+    moviesListTitulo.innerHTML = 'LISTADO DE PELÍCULAS';
+    moviesListTitulo.style.color ='white';
+    moviesListTitulo.style.backgroundColor = 'teal';
+    moviesListTitulo.style.padding = '20px';
 
     
 
